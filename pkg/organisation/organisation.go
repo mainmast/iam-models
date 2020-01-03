@@ -1,6 +1,6 @@
 package organisation
 
-import "gitlab.com/mainmast/microservices/iam/iam-models.git/pkg/user"
+import "github.com/mainmast/iam-models/pkg/user"
 
 //Organisation ...
 type Organisation struct {
