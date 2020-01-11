@@ -1,6 +1,6 @@
 package role
 
-//Role ...
+// Role object
 type Role struct {
 	UUID        string                 `json:"uuid"`
 	Name        string                 `json:"name"`

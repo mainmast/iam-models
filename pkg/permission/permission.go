@@ -1,6 +1,6 @@
 package permission
 
-//Permission ....
+// Permission Object
 type Permission struct {
 	UUID        string                 `json:"uuid"`
 	Name        string                 `json:"name"`

@@ -1,30 +1,27 @@
 package user
 
-//UsrType enum,
-type UsrType string
+// User Status Enum
+type Status string
 
 const (
-	//NoUsrType , no type
-	NoUsrType UsrType = ""
-	//Plaftorm ..
-	Plaftorm UsrType = "platform"
-	// API ..
-	API UsrType = "api"
-)
+	// No status
+	NoStatus Status = ""
 
+	// User is pending activation - not active.
+	Pending Status = "pending"
 
-//UsrStatus enum,
-type UsrStatus string
+	// User is active
+	Active Status = "active"
 
-const (
-	//NoUsrStatus , no status
-	NoUsrStatus UsrStatus = ""
-	// Active ..
-	Active UsrStatus = "active"
-	// Inactive ...
-	Inactive UsrStatus = "inactive"
-	// Blocked ...
-	Blocked UsrStatus = "blocked"
-	// Deleted ...
-	Deleted UsrStatus = "deleted"
+	// User is deemed inactive - no longer active.
+	Inactive Status = "inactive"
+
+	// User has been disabled - no longer active.
+	Disabled Status = "disabled"
+
+	// User has been compromised - no longer active.
+	Compromised Status = "compromised"
+
+	// User has been deleted - no longer active.
+	Deleted Status = "deleted"
 )
